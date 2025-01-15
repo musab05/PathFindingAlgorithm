@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pathfinding Visualizer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Pathfinding Visualizer</h1>
+    <div class="header">
+      <div>
+        <label for="algorithmSelect">Select Algorithm:</label>
+        <select id="algorithmSelect" onchange="selectAlgorithm()">
+          <option value="astar">A*</option>
+          <option value="dfs">DFS</option>
+          <option value="bfs">BFS</option>
+          <option value="dStarLite">D* Lite</option>
+          <option value="dStar">D*</option>
+        </select>
+      </div>
+      <button id="restartButton" onclick="restartSketch()">Restart</button>
+    </div>
+    <div id="timeTaken">Time taken:</div>
+    <div id="totalDistance">Total distance:</div>
+    <script src="script.js"></script>
+    <script src="spot.js"></script>
+  </body>
+</html>
