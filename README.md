@@ -61,4 +61,3 @@ Contributions are welcome! Please follow these steps to contribute:
     ```sh
     git push origin feature/your-feature-name
     ```
-5. Open a pull request.
